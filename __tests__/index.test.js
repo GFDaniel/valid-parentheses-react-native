@@ -5,6 +5,5 @@ describe('Render App', () => {
     it('renders correctly', () => {
         const component = renderer.create(<App />).toJSON();
         expect(component).toBeDefined(); 
-        expect(component).toMatchSnapshot();
     });
 });
