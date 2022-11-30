@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "valid-parentheses-react-native",
+    "description": "valid-parentheses-react-native",
     "slug": "valid-parentheses-react-native",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,6 +22,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.gfdaniel.validparenthesesreactnative",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
@@ -28,6 +30,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a100cbe7-f329-4273-961d-7622d5906ddf"
+      }
     }
   }
 }

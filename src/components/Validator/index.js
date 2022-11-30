@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { TextInput } from "@react-native-material/core";
-import { View, Text } from 'react-native';
+import { View, Text, TextInput } from 'react-native';
 
 const validateString = (text) => {
   let stack = []
@@ -58,14 +57,15 @@ const Validator = () => {
     <View style={{paddingTop: 100, paddingHorizontal: 20 }}>
       
       {validateString(text) && (
-        <Text style={{ marginBottom:50, fontSize:20, color:'green', fontWeight:"bold", textAlign:"center"}}>Los parentesis, Corchetes, etc estan equilibrados</Text>
+        <Text className="balancedBrackets" style={{ marginBottom:50, fontSize:20, color:'green', fontWeight:"bold", textAlign:"center"}}>Los parentesis, Corchetes, etc estan equilibrados</Text>
       )}
 
       {!validateString(text) && (
-        <Text style={{ marginBottom:50, fontSize:20, color:'red', fontWeight:"bold", textAlign:"center"}}>Los parentesis, Corchetes, etc no estan equilibrados</Text>
+        <Text className="unbalancedBrackets" style={{ marginBottom:50, fontSize:20, color:'red', fontWeight:"bold", textAlign:"center"}}>Los parentesis, Corchetes, etc no estan equilibrados</Text>
       )}
 
       <Text style={{ marginBottom:10, fontSize:14, color:'grey'}}>Ingresa tu codigo:</Text>
+
       <TextInput multiline={true} numberOfLines={10}
           style={{ flex: 1, height:200, textAlignVertical: 'top'}} 
           variant="standard" value={text} onChangeText={onChangeText}/>

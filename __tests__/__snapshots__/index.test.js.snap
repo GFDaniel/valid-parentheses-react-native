@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render App renders correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "paddingHorizontal": 20,
+        "paddingTop": 100,
+      }
+    }
+  >
+    <Text
+      className="unbalancedBrackets"
+      style={
+        {
+          "color": "red",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "marginBottom": 50,
+          "textAlign": "center",
+        }
+      }
+    >
+      Los parentesis, Corchetes, etc no estan equilibrados
+    </Text>
+    <Text
+      style={
+        {
+          "color": "grey",
+          "fontSize": 14,
+          "marginBottom": 10,
+        }
+      }
+    >
+      Ingresa tu codigo:
+    </Text>
+    <TextInput
+      multiline={true}
+      numberOfLines={10}
+      onChangeText={[Function]}
+      style={
+        {
+          "flex": 1,
+          "height": 200,
+          "textAlignVertical": "top",
+        }
+      }
+      value="const addOne = value => { return value + 1; }};"
+      variant="standard"
+    />
+  </View>
+</View>
+`;
